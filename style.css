@@ -9,3 +9,6 @@ p{
 .photo{
     position: relative;
 }
+img{
+    width: 100%;
+}
