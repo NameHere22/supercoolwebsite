@@ -2,3 +2,10 @@ h2{
     font-size: xx-large;
     text-align: center;
 }
+p{
+    position: absolute;
+
+}
+.photo{
+    position: relative;
+}
