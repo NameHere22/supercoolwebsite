@@ -1,20 +1,201 @@
-h2{
-    font-size: xx-large;
-    text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-p{
-    position: absolute;
+html,body{
+    height: 100%;
 
 }
-.photo{
+body{
+    overflow-x: hidden;
+}
+:root{
+--main-color: #f8b281;
+--secondary-color: #1b1b1b;
+}
+
+@font-face {
+    font-family: coolFont;
+    src: url(./NerkoOne-Regular.ttf);
+}
+
+.links{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translatex(100%);
+}
+.links a{
+    color: black;
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 2.5rem;
+    line-height: 125%;
+    padding: 1rem 0rem;
+}
+h3{
+    font-size: 1.5rem;
+    line-height: 125%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav svg{
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    z-index: 10;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h1{
+    margin-left: 0.5rem;
+    font-family: "coolFont", sans-serif;
+    font-size: 1.5rem;
+}
+.logo img{
+    width: 4rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.front-page{
+    min-height: 100vh;
+    /* background: darkgray;*/
+    /* color: lightgray; */
+}
+.section{
+    padding: 5%;
+}    
+.selling-point{
+    margin-top: 25vh;
+    font-family: "coolFont", sans-serif;
+    text-shadow: 0px 4px 12px rgb(255, 255, 255);
+    text-align: center;
+}
+.selling-point h3{
+    font-family: "coolFont", sans-serif;
+    text-shadow: 0px 4px 12px rgb(255, 255, 255);
+}
+.ctas{
+    margin-top: 2rem;
+}
+.ctas button{
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 24px rgb(59, 58, 58);
+    margin: 1rem;
+    background-color: rgb(126, 170, 209);
+    color: #1b1b1b;
+}
+.cta-main{
+    background-color: var(--secondary-color);
+    color: white;
+    
+}
+.cta-sec{
+    background-color: var(--secondary-color);
+    color: white;
+
+}
+.hero{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;   
+}
+.classes img{
+    width: 100%;  
+}
+.brooms,.chembroom,.suction-brooms,.randomheader
+{
     position: relative;
-    width: 100%;
-    height: 50%;
 }
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+
+.classes h2{
+    
+    font-family: "coolFont", sans-serif;
+    color: rgb(0, 0, 0);
+    /*text-shadow: 0px 5px 0px white;*/
+    position: absolute;
+    bottom: 10%;
+    margin-left: 0.5rem;
+    margin-bottom: 3rem;
+    line-height: 4rem;
+    /*left: 50%;
+    transform: translate(-40%, -10%);*/   
 }
+.classes h1{
+    font-family: "coolFont", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: xxx-large; 
+    background-image: linear-gradient(#A29D8D, #B5AFA5);
+    text-align: center;
+ }
+ 
+.classes h3{
+    font-family: "coolFont", sans-serif;
+    color: rgb(0, 0, 0);
+    /*text-shadow: 0px 5px 0px white;*/
+    position: absolute;
+    bottom: 85%;
+    left: 50%;
+    transform: translate(-40%, -10%); 
+    text-shadow: 0px 4px 12px white; 
+    font-size: 3rem;
+}
+.about img{
+    width: 100%;
+}
+.about{
+    position: relative;
+}
+.about h2{
+    font-size: 2.9rem;
+    position: absolute;
+    font-family: "coolFont", sans-serif;
+    color: rgb(254, 254, 254);
+    bottom: 85%;
+    left: 50%;
+    transform: translate(-40%, -10%); 
+}
+.about p{
+    font-family: "coolFont", sans-serif;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 2rem;
+    text-align: center;
+    bottom: 40%;
+    line-height: 5rem;
+    
+}
+.about video{
+    width: 100%;
+}
+.bottom{
+    height: 10vh;
+    background-color: #A29D8D;
+    text-align: center;
+}
+
+
 
 
