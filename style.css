@@ -185,6 +185,7 @@ nav svg{
     text-align: center;
     bottom: 40%;
     line-height: 5rem;
+    display: flex;
     
 }
 .about video{
