@@ -186,6 +186,7 @@ nav svg{
     bottom: 40%;
     line-height: 5rem;
     display: flex;
+    overflow: hidden;
     
 }
 .about video{
